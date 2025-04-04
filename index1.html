@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fridge Inventory & Meal Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1> Fridge Inventory & Meal Planner 🍽</h1>
+    </header>
+
+    <main>
+        <section id="inventory">
+            <h2>Fridge Inventory</h2>
+            <input type="text" id="itemInput" placeholder="Enter item...">
+            <input type="date" id="expiryInput">
+            <button onclick="addItem()">Add</button>
+            <ul id="inventoryList"></ul>
+        </section>
+
+        <section id="ai-suggestions">
+            <h2>AI Meal Suggestions 🍛</h2>
+            <button onclick="generateMeal()">Suggest Meals</button>
+            <p id="suggestedMeal">🍲 Your Indian meal suggestion will appear here.</p>
+        </section>
+
+    </main>
+
+    <script src="script1.js"></script>
+</body>
+</html>
